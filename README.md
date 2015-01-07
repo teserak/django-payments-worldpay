@@ -42,18 +42,18 @@ window.onload = function() {
     e.preventDefault();
     
     Worldpay.card.createToken(form, function(status, response) {
-
-    	if (response.error) {
-    		form.worldpyjs_validation_error.value = response.error.message
-    	}
-    	else{
-    		form.worldpyjs_validation_error.value = ''
-    	}
-    
-    	var token = response.token;
-    	form.token.value = token;
-    	form.submit()
-    });
+      
+      if (response.error) {
+      	form.worldpyjs_validation_error.value = response.error.message
+      }
+      else{
+      	form.worldpyjs_validation_error.value = ''
+      }
+      
+      var token = response.token;
+      form.token.value = token;
+      form.submit()
+      });
   })
 }
 </script>
