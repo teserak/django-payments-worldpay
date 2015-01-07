@@ -53,7 +53,7 @@ window.onload = function() {
       var token = response.token;
       form.token.value = token;
       form.submit()
-      });
+    });
   })
 }
 </script>
