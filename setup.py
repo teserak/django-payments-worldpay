@@ -8,7 +8,7 @@ PACKAGES = [
 
 REQUIREMENTS = [
     'Django>=1.6',
-    'django-payments==0.5.3.1',
+    'django-payments>=0.6.4',
 ]
 
 setup(
